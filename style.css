@@ -1,0 +1,173 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #ff4757; /* Vibrant red */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Donor Form Styling */
+#donor-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+#donor-form h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#donor-form input,
+#donor-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#donor-form input:focus,
+#donor-form select:focus {
+    border-color: #ff4757;
+    outline: none;
+}
+
+#donor-form .phone-input {
+    display: flex;
+    gap: 5px;
+}
+
+#donor-form .phone-input input[type="text"] {
+    width: 60px;
+    text-align: center;
+    background-color: #f1f1f1;
+    cursor: not-allowed;
+}
+
+#donor-form .phone-input input[type="tel"] {
+    flex: 1;
+}
+
+#donor-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#donor-form button:hover {
+    background-color: #cc0000;
+}
+
+/* Donor List Styling */
+#donor-list {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#donor-list h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#donor-list ul {
+    list-style-type: none;
+}
+
+#donor-list li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#donor-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#donor-list li span {
+    font-weight: bold;
+    color: #ff4757;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    #donor-form h2,
+    #donor-list h2 {
+        font-size: 1.5rem;
+    }
+
+    #donor-form input,
+    #donor-form select,
+    #donor-form button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#donor-list li {
+    animation: fadeIn 0.5s ease-in-out;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Blood Donor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Live Blood Donor</h1>
+    </header>
+    <main>
+        <section id="donor-form">
+            <h2>Register as a Donor</h2>
+            <form id="registerDonor">
+                <input type="text" id="name" placeholder="Full Name" required>
+                
+                <!-- Blood Type Dropdown -->
+                <select id="bloodType" required>
+                    <option value="" disabled selected>Select Blood Type</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+                
+                <input type="text" id="location" placeholder="Location" required>
+                
+                <!-- Phone Number with Default Country Code -->
+                <div style="display: flex;">
+                    <input type="text" value="+91" style="width: 50px; margin-right: 5px;" readonly>
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        <section id="donor-list">
+            <h2>Available Donors</h2>
+            <ul id="donors">
+                <!-- Sample Donor (can be removed) -->
+                <li><span>Donor 1</span> O+ , India Delhi, +91</li>
+                <li><span>Donor 2</span> A- , India Mumbai, +91</li>
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: #ff0000; */
+}
+
+:root{
+    --bg: #A31D1D;
+    --font: #FEF9E1;
+    --other: rgb(240, 84, 45);
+}
+/* 
+#img{
+    margin-top: 36px;
+    height: 100vh;
+    width: 100vh;
+} */
+
+body{
+    background-image: url(file:///C:/Users/aditya%20jain/Downloads/Human-red-blood-cells.webp);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav {
+    display: flex;
+    width: 100vw;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    background-color: var(--bg);
+    justify-content: space-between;
+}
+
+nav h1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-right: 70px;
+    padding-left: 7px;
+}
+nav ul li{
+    display:inline-flex;
+    padding: 5px;
+    list-style: none;
+    padding-right: 20px;
+    
+}
+nav ul li a{
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: rgb(250, 189, 23);
+    color: var(--font);
+    
+}
+
+nav ul li a:hover{
+    box-shadow: black 3px 7px;
+    /* animation-name: var(--bg); */
+    text-decoration-color: rgb(255, 0, 0);
+    
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    height: fit-content;
+    width: fit-content;
+    margin-top: 200px;
+    /* border: 2px solid black; */
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.items{
+     justify-content: space-evenly;
+}
+
+main div button{
+    height: 100px;
+    width: 320px;
+    padding: 5px;
+    background-color: rgb(199, 39, 39);
+    font-weight: 900;
+    color: var(--font);
+    font-size: 34px;
+    opacity: .7;
+}
+main div button:hover{
+    padding: 20px;
+    opacity: .8;
+    background-color: maroon;
+    color:white;
+    box-shadow: 10px 5px 5px red;
+}
+
+main div button a{
+    text-decoration: none ;
+    
+
+}
